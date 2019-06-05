@@ -1,0 +1,385 @@
+/*通配符*/
+*{
+	margin:0px;
+	padding:0px;
+}
+/*标签选择器*/
+html,body{
+	width:100%;
+	heigh:100%;
+}
+/*类选择器*/
+.box{
+	position: absolute;/*绝对定位*/
+}
+.page{
+	position: relative;/*相对定位*/
+}
+.page1{
+	background-color:cadetblue;
+}
+.page2{
+	background-color: thistle;
+}
+.page3{
+	background-color: cadetblue;
+}
+.page4{
+	
+}
+.page5{
+	background-color: thistle;
+}
+.page6{
+	background-color: thistle;
+}
+.page7{
+	background-color: thistle;
+}
+/*page1-page4*/
+.page1 img{
+	position: absolute;/*绝对定位 图片之间互不干扰*/
+}
+
+.page1_girl{
+	top:25%;
+	left: 0;
+	
+}
+/*敬礼*/
+.page1_hand{
+	top: 25%;
+	left: 32%;
+	animation:page1_rotate 1s infinite linear;
+}
+@keyframes page1_rotate{
+	/*任何状态与起始状态相同都可以省略不写*/
+	0%{}
+	25%{transform: rotate(-30deg);}
+	50%{}	
+	100%{}
+}
+.page1_flag{
+	
+	top: 15%;
+	right: -10%;
+}
+.page1_txt{
+	top:45%;
+	right: 20%;
+	animation:page1_scale 1s infinite linear;
+}
+@keyframes page1_scale{
+	/*动画起始状态 from ->0%*/
+	from{}
+	50%{transform: scale(0.8);}
+	/*to->100%*/
+	to{}
+}
+.page1_girl{
+	display: none;
+}
+.page1_kids{
+	top:50%;
+	right: 0;
+	display: none;
+}
+.page1_foot{
+	width: 50%;
+	height: 28%;
+	left: 0;
+	bottom: 0%;/*最底端*/
+	/*隐藏*/
+	display:none;
+}
+/*page2*/
+.page2 img{
+	position: absolute;
+	}
+
+.page2_bg{
+	width: 100%;
+	height: 78%;
+}
+.page2_txt1,.page2_txt2
+{
+	position: absolute;
+	display: none;
+	font-size:30px;
+	color: bisque;
+   -webkit-box-reflect: below 10px 
+   -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.5));
+	
+}
+.page2_txt1{
+	top:25%;
+	right: 15%;
+}
+.page2_txt2{
+	top:40%;
+	right: 15%;
+}
+/*page3*/
+.page3 img{
+	position: absolute;
+}
+
+.page3_star{
+	width: 30%;
+	top: 3%;
+	left: 0%;	
+	animation: starflash 1s infinite linear;
+}
+@keyframes starflash{
+	
+	from{}
+	50%{transform: scale(0.5);}
+	to{}
+}
+.page3_bottom{
+	width: 100%;
+	height: 22%;
+	bottom: 0;
+	display: none;
+}
+.page3_txt1,.page3_txt2
+{
+	position: absolute;
+	display: none;
+	font-size:40px;
+	color: bisque;
+   -webkit-box-reflect: below 10px 
+   -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.5));
+	
+}
+.page3_txt1{
+	top:30%;
+	right: 15%;
+}
+.page3_txt2{
+	top:45%;
+	right: 20%;
+}
+/*page4*/
+.page4_img{
+	width: 100%;
+	height: 30%;
+	top: 0;
+}	
+/*民族*/
+.page4_txt{	
+	left: 50%;
+	top: 50%;
+	display: none;
+}
+/*团结*/
+.page4_txt1{
+	top: 60%;
+	left: 55%;
+	display: none;
+}
+.page4_nation{
+	width: 100%;
+	height: 45%;
+	display: none;
+}
+/*page5*/
+.page5_txt{
+	width: 65%;
+	height: 20%;
+	top: 0;
+	left:75%;
+	display: none;
+}
+.page5_flower{
+	width: 100%;
+	height: 35%;
+	top: 25%;
+	right: 0;
+	display: none;
+}
+.page5_kid{
+   width: 100%;
+   height: 40%;
+   right: 0;
+   bottom: 0;
+   display: none;	
+}
+
+/*page6*/
+.page6 img{
+	position: absolute;
+	/*display: none;*/
+}
+
+.page6_14,.page6_13,.page6_15,.page6_16,.page6_17,.page6_11,.page6_12{
+	animation: page1_scale 2s infinite linear;
+}
+.page6_1{
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.page6_14{
+	width: 10%;
+	height: 30%;
+	top: 10%;
+	left: 0;
+}
+.page6_13{
+	width: 10%;
+	height: 30%;
+	top: 6%;
+	left: 15%;
+}
+.page6_15{
+	width: 15%;
+	height: 30%;
+	top:5 %;
+	left: 31%;
+		
+}
+.page6_16{
+	width: 15%;
+	height: 30%;
+	top: 0%;
+	left: 46%;
+}
+.page6_17{
+	width: 15%;
+	height: 30%;
+	top: 5%;
+	left: 61%;
+	
+}
+.page6_11{
+	width: 15%;
+	height: 30%;
+	top: 8%;
+	left: 76%;
+	
+}
+.page6_12{
+	width: 10%;
+	height: 30%;
+	top: 12%;
+	left: 90%;
+	
+}
+/*page7*/
+
+.page7 img{
+	position: absolute;
+}
+
+.page7_rightup{
+	width: 60%;
+	height: 60%;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+.page7_jie{
+	
+	width:30%;
+	height: 30%;
+	top: 0;
+	left: 0;
+	animation: zhongguojie 4s infinite linear;
+	
+}
+@keyframes zhongguojie{
+	0%{}
+	25%{transform: rotate(-15deg);}
+	50%{}
+	75%{transform: rotate(15deg);}
+	100%{}
+}
+
+.page7_yanhua{	
+	width: 0%;
+	height: 0%;		
+	z-index: 1;
+}
+#yanhua1{
+	top: 20%;
+	left:20%;
+	animation: yanhua 3s infinite linear;
+}
+#yanhua2{
+	top: 10%;
+	left:10%;
+	animation: yanhua 4s 1s infinite linear;
+	
+}
+#yanhua3{
+	top: 25%;
+	left:50%;
+	animation: yanhua 5s 2s infinite linear;
+}
+
+#yanhua4{
+	top: 40%;
+	left:25%;
+	animation: yanhua 5s 2s infinite linear;
+}
+@keyframes yanhua{
+	0%{}
+	25%{width: 5%;height: 5%;}
+	50%{width: 10%;height: 10%;}
+	75%{width: 20%;height: 20%;}
+	97%{width: 40%;height: 40%;}
+	100%{width: 40%;height: 40%;}
+		
+}
+.page7_tuanhui{
+	width: 20%;
+	height: 30%;
+	bottom: 10%;
+	left: 30%;
+}
+.page7_txt70{
+	width: 70%;
+	height: 70%;
+	bottom: -5%;
+	left: 5%;
+	
+}
+.page7_bottom{
+	position: absolute;
+	bottom: 0%;
+	left: -10%;
+	width: 110%;
+	height: 15%;
+}
+/*滑动箭头*/
+upAndDown{
+	width: 15%;
+	bottom: 5%;
+	left: 42.5%;/*85/2*/
+	position: fixed;/*固定*/
+	animation:upAndDown 1s infinite linear;
+}
+@keyframes upAndDown{
+	from{}
+	50%{bottom: 10%;}
+	to{}	
+}
+/*音乐*/
+.musicBtn{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top:0px;
+	right: 0px;
+	animation: musicBtnRotate 1s infinite linear;
+}
+@keyframes musicBtnRotate{
+	from{}
+	to{transform: rotate(360deg);}
+}
+.musicBtnRotate{
+	animation: musicBtnRotate 1s infinite linear;
+}
+
